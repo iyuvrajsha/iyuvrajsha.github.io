@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Spectacles In India | spectacular.com</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* body{
+            /* background-color: rgba(201, 201, 201, 0.452);
+        } */
+        html{
+            scroll-behavior: smooth;
+        }
+        *{
+            padding:0px;
+            margin:0px;
+            font-family: 'Baloo Bhai 2', 'cursive';
+        }
+        #header{
+            position: fixed;
+            width:100%;
+            top:0;
+            left:0;
+            z-index: 1;
+        }
+        .navbar{
+            display: flex;
+            position: relative;
+        }
+        #header::before{
+            content: "";
+            position: absolute;
+            top:0;
+            left:0;
+            height:110%;
+            width: 100%;
+            z-index: -1;
+            background-color: black;
+            opacity: .3;
+        }
+        .navmenu{
+            display: flex;
+            list-style: none;
+            text-align: center ;
+            padding-top: 1em;
+            margin-block-start: 0em;
+            padding-inline-start: 0px;
+        }
+        .navmenu li{ 
+            margin-right:1.5em;
+        }
+        .navbar img{
+            height: 3em;
+            width: 6em;
+            margin: 0.8em 1em 0em;
+            filter: invert();
+        }
+        .navmenu a{
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: .5em;
+        }
+        .navmenu a:hover{
+            color: black;
+            background-color: aliceblue;
+            border-radius: 12px;
+            /* text-decoration: underline; */
+        }
+
+        #home{
+            display: flex;
+            color: white;
+            position: relative;
+            /* height: 15em; */
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 11em 14em 12em 14em;
+            height: auto;
+        }
+         #home::before{
+            content: "";
+            position: absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width: 100%;
+            z-index: -2;
+            background: url("imgs/bg2.jpg") no-repeat center center/cover;
+            
+        }     
+        .primaryText{
+            text-align: center;
+            font-size: 4.5rem;
+        }
+        .secondaryText{
+            font-size: 1.5rem;
+        }
+        #orderButton{
+            font-size: 1.5rem;
+            font-family: 'Baloo Bhai 2', 'cursive';
+            color: white;
+            background-color: rgb(44, 43, 43);
+            border: 0.05em solid white;
+            opacity: 0.5;
+            padding: 0em 0.3em;
+            border-radius: 0.3em;
+            cursor: pointer;
+            transition: all;
+        }
+        #orderButton:hover{
+            color: black;
+            background-color: aliceblue;
+            /* transform: scale(1.1); */
+            /* border-radius: 12px; */
+            /* text-decoration: underline; */
+        }
+        /* #Services{
+            padding-top: 1.5em;
+        } */
+        .ServicesContainer{
+            display: flex;
+            /* border: 2px solid red; */
+            /* flex-wrap: wrap; */
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(163, 161, 161, 0);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            border: 0.001em solid rgb(167, 157, 158);
+            border-radius: 1em;
+            box-shadow: 0.3em 0.5em rgb(72 35 68);
+            padding: 1em 1em;
+            margin: 1em 1em;
+            height: 30em;
+            text-align: center;
+            align-items: center;
+            transition: all;
+            height: auto;
+            /* justify-content: center; */
+        }
+        .container:hover{
+            transform: scale(1.05);
+        }
+        .container img{
+            height: 8em;
+            width:11em;
+            padding-bottom: 2em;
+        }
+        #OurServices{
+            text-shadow: 0.03em 0.02em rgb(195 161 183);
+            margin-top: 0.4em;
+        }
+        #contact{
+            margin-top: 4em;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            top:0;
+            left:0;
+            padding-left: 2em;
+            /* text-align: center;
+            align-items: center;
+            justify-content: center; */
+        }
+        #contact::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height:100%;
+            width: 100%;
+            z-index: -3;
+            background: url("imgs/bg3.jpg") no-repeat center center/cover;
+        }
+        .contactForm{
+            display: flex;
+            flex-direction: column;
+            /* padding-left: 2em; */
+            /* align-items: center; */
+            /* text-align: center;
+            justify-content: center; */
+        }
+        .form{
+            text-align: center;
+            margin: 0.3em 0.5em;
+            padding: 0.3em 0.5em;
+            width: 18em;
+            font-size: 1.5rem;
+            font-family: 'Baloo Bhai 2', 'cursive';
+            color: white;
+            background-color: rgb(44, 43, 43);
+            border: 0.01em solid rgb(170, 192, 202);
+            opacity: 0.6;
+            border-radius: 0.5em;
+            cursor: pointer;
+            transition: all;
+        }
+        #ContactUs{
+            text-align: left;
+            margin:  1em 0em 0em 0.5em; 
+            color: white;
+            opacity: 0.7;
+        }
+        #submitButton{
+            margin-bottom: 2em;
+            width: 15em;
+            margin-left: 2.7em;
+        }
+        #submitButton:hover{
+            color: black;
+            background-color: aliceblue;
+        }
+        .aboutContainer{
+            display: flex;
+            flex-direction: column;
+        }
+        .abtcont1{
+            flex-direction: row;
+            justify-content: left;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .abtcont1 img{
+            height: 19em;
+            width:33%;
+        }
+        .aboutDetails{
+            position: relative;
+            left: 6em;
+            display: flex;
+            height: 19em;
+            width: 60%;
+            flex-direction: column;
+            /* left: none; */
+            /* border: 2px solid red; */
+        }
+        .abtcont1{
+            box-shadow: none;
+            /* border: none; */
+            height: auto;
+        }
+        .abtcont1:hover{
+            transform: scale(1);
+        }
+        #aboutcont2{
+            left: 0;
+            justify-content: center;
+            /* flex-direction: row; */
+        }
+        #abtimg2{
+            position: relative;
+            left: 6em;
+        }
+        .tertiary-headings{
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+        .footer-container{
+            background-color: black;
+            color: white;
+            text-align: center ;
+        }
+        @media (max-width:1350px){
+            body{
+                font-size: 1rem;
+            }
+            .navbar{
+                flex-direction: column;
+                justify-content: center;
+                /* text-align: center; */
+                align-items: center;
+                padding: 0em;
+            }
+
+            #home{
+                padding: 9em 0.5em 1em 0.5em;
+                height: 100%;
+            }
+            .primaryText{
+            font-size: 2rem;
+        }
+        #abtcont1{
+            flex-direction: column;
+        }
+        .ServicesContainer{
+            flex-direction: column;
+        }
+        .secondaryText {
+            font-size: 1rem;
+        }
+        #submitButton {
+        margin-bottom: 2em;
+        width: 33%;
+        margin-left: 0em;
+        text-align: center;
+}
+#message{
+    height: 3em;
+}
+.form{
+            text-align: left;
+            margin: 0.3em 0em;
+            padding: 0.3em 0.5em;
+            width: 33%;
+            font-size: 0.7rem;
+        }
+        .navmenu li {
+    margin-right: 0.5em;
+}
+.navmenu a {
+    font-size: 1em;
+}
+#contact {
+    padding-left: 1em;
+}
+#abtcont1 {
+    flex-direction: column;
+    align-items: center;
+}
+.aboutDetails {
+    left: 0em;
+    height: auto;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+#abtimg2 {
+    left: 0em;
+}
+.tertiary-headings{
+            font-size: 1rem;
+        }
+        .container-inner{
+            flex-direction: column;
+            align-items: center;
+            margin: 0.5em;
+    padding: 0.5em;
+        }
+        .abtcont1 img{
+            height: 8em;
+        width: 11em;
+        padding-bottom: 2em;
+        }
+        #about-inner-container2{
+    flex-direction: column-reverse;
+}
+#section-container{
+    margin: 0.5em;
+    padding: 0.5em;
+}
+        }
+        /* #footer{
+            position: fixed;
+            width:100%;
+            bottom:0;
+            left:0;
+            z-index: 1;
+        } */
+        </style>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <img src="imgs/logo.png" alt="www.spectacular.com">
+            <div class= "menucontainer">  
+                <ul class= "navmenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id ="home">
+            <h1 class= "primaryText">Welcome to Spectacular.com!</h1>
+            <p class="secondaryText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, repellat!</p>
+            <button id="orderButton">Order Now!</button>
+    </section>
+    <section class="serviceSection" id ="Services">
+            <h1 class="primaryText" id ="OurServices">Our Services</h1>
+            <div class="ServicesContainer">
+                <div class="container" id="cont1">
+                    <img src="imgs/3.png" alt="delivery MAN">
+                    <h2 class="secondaryText">Free Home Delivery</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus a deleniti molestias maxime earum vitae ad omnis? Similique delectus rerum excepturi rem suscipit? </p>
+                </div>
+                <div class="container" id="cont2">
+                    <img src="imgs/4.jpg" alt="Stores">
+                    <h2 class="secondaryText">300+ Walk-In Stores</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus a deleniti molestias maxime earum vitae ad omnis? Similique delectus rerum excepturi rem suscipit? </p>
+                </div>
+                <div class="container" id="cont3">
+                    <img src="imgs/item1.jpg" alt="Image">
+                    <h2 class="secondaryText">Buy 1 Get 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus a deleniti molestias maxime earum vitae ad omnis? Similique delectus rerum excepturi rem suscipit? </p>
+                </div>
+            </div>
+    </section>
+    <section id="contact">
+        <h1 class="primaryText" id ="ContactUs">Contact Us</h1>
+        <form action="#" class="contactForm">
+            <input type="text" name="name" id="nameEntry" class="form" placeholder="Enter Your Name">
+            <input type="text" name="phone" id="phoneEntry" class="form" placeholder="Enter Your Phone No.">
+            <input type="email" name="email" id="emailEntry" class="form" placeholder="Enter Your Email">
+            <!-- <input type="text" name="age" id="ageEntry" class="form" placeholder="Enter Your Age"> -->
+            <!-- <input type="text" name="gender" id="genderEntry" class="form" placeholder="Enter Your Gender"> -->
+            <textarea name="message" id="message" cols="10" rows="3" class="form" placeholder="Enter Your Message"></textarea>
+            <!-- <input type="textbox"> -->
+            <button type="submit" class="form" id="submitButton"> Submit </button>
+        </form>
+    </section>
+    <section class="aboutSection" id ="about">
+        <h1 class="primaryText" id ="about">About Us</h1>
+        <div class="container" id="section-container">
+            <div class="container abtcont1 container-inner">
+                <img src="imgs/abt1.jpg" alt="delivery MAN">
+                <div class="aboutDetails">
+                    <h2 class="secondaryText">OUR VISION</h2>
+                    <p><h3 class="tertiary-headings">India is the blind capital of the world.</h3>
+                        15 million people in India are blind, which is 50% of the blind people of the world.
+                        <br>    
+                        75% of these are cases of avoidable blindness. Thanks to the country's acute shortage of optometrists and donated eyes for the treatment of corneal blindness.
+                        153 million people in the country need reading glasses but do not have access to them.
+                        <br>
+                        Our country needs 40,000 optometrists. Unfortunately we only have 8,000.
+                        </p>
+                        <h3 class="tertiary-headings">Revolutionize the eyewear industry in India</h3>
+                        <p> Spectacular's aim is to help drop this number marginally in the coming years, which can be achieved by providing high quality eyewear to millions of Indians at affordable prices, giving free eye check ups at home and by extending our services to the remote corners of India.
+
+                        </p>
+                </div>
+            </div>
+        <div class="container abtcont1 container-inner" id="about-inner-container2">
+                <div class="aboutDetails" id="aboutcont2">
+                    <h2 class="secondaryText">OUR MISSION</h2>
+
+                    <p>Wow customers by doing something that has never been done before in the eyewear industry. It began with an aim. An aim to provide every Indian access to high-quality designer glasses without shelling out their pocket. We rocked our brains. We broke our backs to come up with a plan that will not just change the way this industry works, but also will completely sweep customer off their feet. It can only be achieved if we provide.</p>                 
+                </div>
+
+                <img src="imgs/abt2.jpg" alt="Stores" id="abtimg2">
+        </div>
+
+            <div class="container abtcont1 container-inner">
+                <img src="imgs/abt3.png" alt="Image">
+                <div class="aboutDetails">
+                    <h2 class="secondaryText">GREAT QUALITY</h2>
+                    <p> 
+                        <h3 class="tertiary-headings">Made by robots</h3>
+                        We are India's first and the only brand to use robotic technique that delivers glasses which are accurate to 3 decimal places. These machines imported from Germany, ensure perfection on all front: an automated system that allows to inspect lenses, determine the geometric center, and load the lenses for edging without the need of a finishing block.
+                        <br>
+                        <h3 class="tertiary-headings">Mind of machine</h3>
+                        Our people have zero tolerance to error and our call center aims to delight every customer, solve their problems and work on their feedbacks.</p>
+                </div>
+            </div>
+        </div>
+</section>
+<footer id="footer">
+    <div class="footer-container">
+        Copyright © www.spectacular.com. All rights reserved!
+    </div>
+</footer>
+</body>
+</html>
