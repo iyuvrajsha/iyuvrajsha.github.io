@@ -1,0 +1,97 @@
+body{
+    font-size: 1rem;
+}
+.container:hover{
+transform: scale(1);
+}
+.navbar{
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+    padding: 0em;
+}
+
+#home{
+    padding: 9em 0.5em 1em 0.5em;
+    height: 100%;
+}
+.primaryText{
+font-size: 2rem;
+}
+#abtcont1{
+flex-direction: column;
+}
+.ServicesContainer{
+flex-direction: column;
+}
+.secondaryText {
+font-size: 1rem;
+}
+#submitButton {
+margin-bottom: 2em;
+width: 33%;
+margin-left: 0em;
+text-align: center;
+}
+#message{
+height: 3em;
+}
+.form{
+text-align: left;
+margin: 0.3em 0em;
+padding: 0.3em 0.5em;
+width: 33%;
+font-size: 0.7rem;
+}
+.navmenu li {
+margin-right: 0.5em;
+}
+.navmenu a {
+font-size: 1em;
+}
+#contact {
+padding-left: 1em;
+}
+#abtcont1 {
+flex-direction: column;
+align-items: center;
+}
+.aboutDetails {
+left: 0em;
+height: auto;
+width: 100%;
+/* border: 2px solid red; */
+}
+#abtimg2 {
+left: 0em;
+}
+.tertiary-headings{
+font-size: 1rem;
+}
+.container-inner{
+flex-direction: column;
+align-items: center;
+margin: 0.5em;
+padding: 0.5em;
+}
+.abtcont1 img{
+height: 8em;
+width: 11em;
+padding-bottom: 2em;
+}
+#about-inner-container2{
+flex-direction: column-reverse;
+}
+#section-container{
+margin: 0.5em;
+padding: 0.5em;
+}
+
+/* #footer{
+position: fixed;
+width:100%;
+bottom:0;
+left:0;
+z-index: 1;
+} */
