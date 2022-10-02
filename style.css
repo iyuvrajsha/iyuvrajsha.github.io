@@ -79,6 +79,7 @@ html{
     width: 100%;
     z-index: -2;
     background: url("bg2.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
     
 }     
 .primaryText{
@@ -167,6 +168,7 @@ html{
     width: 100%;
     z-index: -3;
     background: url("bg3.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
 }
 .contactForm{
     display: flex;
