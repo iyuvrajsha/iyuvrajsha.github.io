@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding : 0;
+    font-family: 'Baloo Bhai 2', 'cursive';
+}
+#Item-section{
+    background-color: rgb(248, 248, 248);
+}
+.products{
+    /* background-color: aqua; */
+    display: grid ;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 1rem 0rem;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 4px;
+    background-color: white;
+    margin: 0.5em;
+    /* display: inline; */
+    /* color: white; */
+    height: 280px;
+    width: 250px;
+}
+.item:hover{
+    transform: scale(1.01);
+    box-shadow: 0.1em 0.1em rgb(128, 127, 127);
+}
+.item-image{
+    height: 10rem;
+    width: 15rem;
+    margin: 0.5em auto;
+    border-radius: 4px;
+}
+.item-description{
+    /* border: 1px solid black; */
+    padding: 0.2rem 0.5rem;
+}
+.item-name{
+    font-weight: bold ;
+    font-size: large;
+}
+.item-price{
+    font-weight:bold;
+    font-size: large;
+}
+.discounted-price{
+    font-weight: lighter;
+    text-decoration: line-through;
+    color: grey;
+    font-size: small;
+}
+.tax{
+    text-decoration: solid;
+    font-weight: lighter;
+    color: grey;
+    font-size: small;
+}
+.offer{
+    color: white;
+    margin-top: 0.5em;
+    padding-left: 1em;
+    background: linear-gradient(90deg,#868683 0%,rgba(78, 77, 74, 0) 100%);;
+}
+.cart-icon{
+    height:1.5rem;
+    width: 1.7rem;
+    filter: invert();
+}
+.add-to-cart{
+    float: right;
+    padding:0em 0.4em;
+    /* height: 1.4rem; */
+    background-color: black;
+    /* opacity: 0.2; */
+    border: none;
+    border-radius: 0.5em;
+    color: white;
+    cursor: pointer;
+}
+.add-to-cart:hover{
+    background-color: tomato;
+    border: none;
+}
+.fa-heart-o{
+    float: right;
+    cursor: pointer;
+}
+.fa-heart-o:hover{
+    color:red;
+}

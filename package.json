@@ -1,0 +1,25 @@
+{
+  "name": "iyuvrajsha.github.io",
+  "version": "1.0.0",
+  "description": "spectacular.com .A website created to learn web Development",
+  "main": "host.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyuvrajsha/iyuvrajsha.github.io.git"
+  },
+  "author": "Yuvraj Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iyuvrajsha/iyuvrajsha.github.io/issues"
+  },
+  "homepage": "https://github.com/iyuvrajsha/iyuvrajsha.github.io#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "html": "^1.0.0",
+    "mongoose": "^6.6.4",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Login
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='../static/loginStyle.css')
+  body
+    header
+      | Welcome to Spectacular.com
+    #loginContainer
+      form#loginForm(action='/login', method='post')
+        h1 LogIn / SignIn
+        input#userEntry(type='text', name='username', placeholder='Username/Email')
+        input#password(type='password', name='password', placeholder='Password')
+        button.btn(type='submit') Sign In

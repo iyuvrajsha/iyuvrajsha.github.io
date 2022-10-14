@@ -1,0 +1,93 @@
+        body{
+            background: url("../static/imgs/loginBg.jpg") no-repeat center center/cover;
+            height: 97vh;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-attachment: fixed;
+
+        }
+        header{
+            position: fixed;
+            text-align: center;
+            font-size: 4rem;
+            width: 100%;
+            background-color: black;
+            opacity: 0.3;
+        }
+        
+        #loginContainer{
+            /* float: right; */
+            display: flex;
+            /* flex-direction: column; */
+            height: 96vh;
+            width: 98vw;
+            align-items: center;
+            justify-content: right;
+        }
+        #loginForm{
+            display: flex;
+            flex-direction: column;
+            width: 33%;
+            float: right;
+            align-items: center;
+        }
+        #loginForm input{
+            margin: 0.5em 1em;
+            height: 2em;
+            width: 80%;
+            text-align: center;
+            /* border-radius: 0.7em; */
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid #664d3461;
+            color: black;
+            font-size: 1.5rem;
+            outline: none;
+        }
+        #loginForm h1{
+            color: #302828;
+        }
+        .btn{
+            margin: 0.5em 1em;  
+            height: 2em;
+            text-align: center;
+            border-radius: 0.7em;
+            /* border: none; */
+            background-color: transparent;
+            width: 50%;
+            
+            outline: none;
+            font-size: 1.5rem;
+            /* border-bottom: 1px solid white; */
+            cursor: pointer;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+        }
+        .btn:hover{
+            /* background-color: white;
+            opacity: 0.3; */
+            background-color: black;
+            color: white;
+            width: 50%;
+            opacity: 0.5;
+        }
+        #loginForm input:active{
+            background-color: transparent;
+        }
+        @media (max-width:950px){
+            #loginContainer{
+            
+            justify-content: left;
+        }
+        #loginForm{
+            width: 100%;
+        }
+        }
+        @media (max-width:525px){
+        header{
+            font-size: 2rem;
+            
+        }
+        }   
